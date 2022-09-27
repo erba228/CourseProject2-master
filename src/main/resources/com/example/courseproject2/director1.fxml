@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.courseproject2.Director1">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF#FFFFFF;">
+         <children>
+            <AnchorPane maxHeight="100.0" maxWidth="1000.0" minHeight="100.0" minWidth="1000.0" prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #483D8B#483D8B;">
+               <children>
+                  <AnchorPane fx:id="tariffsAnchor" layoutX="400.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #32CD32#32CD32;">
+                     <children>
+                        <Text fill="WHITE" layoutY="55.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tariffs" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+                           <font>
+                              <Font name="Copperplate" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                        <Button fx:id="tariffsButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="tariffsButton" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="clientsAnchor" layoutX="550.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;">
+                     <children>
+                        <Text fill="WHITE" layoutY="55.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+                           <font>
+                              <Font name="Copperplate" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                        <Button fx:id="clientsButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="clientsButton" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="workersAnchor" layoutX="700.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF;">
+                     <children>
+                        <Text fill="WHITE" layoutY="55.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Workers" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+                           <font>
+                              <Font name="Copperplate" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                        <Button fx:id="workersButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="clientsButton" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="logoutAnchor" layoutX="850.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #B22222#B22222;">
+                     <children>
+                        <Text fx:id="logout" fill="WHITE" layoutY="55.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+                           <font>
+                              <Font name="Copperplate" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                        <Button fx:id="logoutButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="logoutButton" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="complainVacation" layoutX="250.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: green;">
+                     <children>
+                        <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Complains Vacations" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+                           <font>
+                              <Font name="Copperplate" size="26.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                        <Button fx:id="complainVacButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="tariffsButton" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" text="DET" textAlignment="CENTER" textFill="#fcfcfcf0">
+         <font>
+            <Font name="Brush Script MT Italic" size="72.0" />
+         </font>
+      </Label>
+      <TableView fx:id="clientsTable" layoutX="500.0" layoutY="100.0" prefHeight="600.0" prefWidth="500.0" visible="false">
+        <columns>
+          <TableColumn fx:id="tableLogin" prefWidth="166.6" text="LOGIN" />
+          <TableColumn fx:id="tablePassword" prefWidth="166.6" text="PASSWORD" />
+            <TableColumn fx:id="tableBalance" prefWidth="166.6" text="BALANCE" />
+        </columns>
+      </TableView>
+      <TableView fx:id="workersTable" layoutX="400.0" layoutY="100.0" prefHeight="600.0" prefWidth="600.0" visible="false">
+         <columns>
+            <TableColumn fx:id="tableName" prefWidth="120.0" text="NAME" />
+            <TableColumn fx:id="tableLastname" prefWidth="120.0" text="LASTNAME" />
+            <TableColumn fx:id="tableLogin1" prefWidth="120.0" text="LOGIN" />
+            <TableColumn fx:id="tablePassword1" prefWidth="120.0" text="PASSWORD" />
+            <TableColumn fx:id="tableSalary" prefWidth="120.0" text="SALARY" />
+         </columns>
+      </TableView>
+      <AnchorPane fx:id="clientAdding" layoutX="160.0" layoutY="180.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add client" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="clientAdd" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="clientsButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="clientDeleting" layoutX="160.0" layoutY="300.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete client" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="clientDelete" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="clientsButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="balanceChanging" layoutX="160.0" layoutY="420.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Change balance" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="clientBalanceChange" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="clientsButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="clientDeleteAnchor" layoutX="535.0" layoutY="130.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="deleteClientLog" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter client's login">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="deleteClientPass" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter client's password">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Button fx:id="deleteButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Delete" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fx:id="addedText" layoutX="550.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Successfully added!" visible="false">
+         <font>
+            <Font name="Copperplate" size="35.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="changeBalanceAnchor" layoutX="545.0" layoutY="140.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="balanceClientLog" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter client's login">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="changeBalanceButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="change" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="balanceNew" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter client's new balance">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="workerAdding" layoutX="140.0" layoutY="180.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add worker" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="workerAdd" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="addWorkerButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="workerDeleting" layoutX="140.0" layoutY="300.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete worker" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="workerDelete" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="deleteWorkerButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="salaryChanging" layoutX="140.0" layoutY="420.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary change" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="workerSalaryChange" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="salaryChangeButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="workerRegister" layoutX="400.0" layoutY="160.0" prefHeight="500.0" prefWidth="600.0" visible="false">
+         <children>
+            <TextField fx:id="newWorkerLog" layoutX="40.0" layoutY="50.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's login">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="newWorkerPass" layoutX="40.0" layoutY="110.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's password">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <PasswordField fx:id="newWorkerPass2" layoutX="165.0" layoutY="170.0" prefHeight="40.0" prefWidth="250.0" promptText="Confirm password">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Button fx:id="addButtonWorker" layoutX="245.0" layoutY="300.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Add" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="newWorkerSalary" layoutX="165.0" layoutY="230.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's salary">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="newWorkerName" layoutX="320.0" layoutY="50.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="newWorkerLastname" layoutX="320.0" layoutY="110.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's lastname">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="workerDeleteAnchor" layoutX="545.0" layoutY="140.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="deleteWorkerLog" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's login">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="workerDeleteButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Delete" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="deleteWorkerPass" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's password">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="salaryChangeAnchor" layoutX="555.0" layoutY="150.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="salaryWorkerLog" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's login">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="changeSalaryButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="change" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="salaryNew" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter worker's new salary">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tariffsTable" layoutX="460.0" layoutY="100.0" prefHeight="600.0" prefWidth="540.0" visible="false">
+         <columns>
+            <TableColumn fx:id="tableTariffId" prefWidth="40.0" text="ID" />
+            <TableColumn fx:id="tableTariffName" prefWidth="100.0" text="NAME" />
+            <TableColumn fx:id="tableTariffPrice" prefWidth="100.0" text="PRICE" />
+            <TableColumn fx:id="tableTariffInternet" prefWidth="100.0" text="INTERNET" />
+            <TableColumn fx:id="tableTariffDuration" prefWidth="100.0" text="DURATION" />
+            <TableColumn fx:id="tableTariffCalls" prefWidth="100.0" text="CALLS" />
+         </columns>
+      </TableView>
+      <AnchorPane fx:id="tariffAdding" layoutX="150.0" layoutY="190.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Tariff" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="tariffAddButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="addTariffButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffDeleting" layoutX="150.0" layoutY="310.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete tariff" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="tariffDeleteButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="deleteTariffButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffChanging" layoutX="150.0" layoutY="430.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" opacity="0.8" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: #20B2AA#20B2AA;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutY="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tariff change" textAlignment="CENTER" wrappingWidth="152.7714574338604">
+               <font>
+                  <Font name="Copperplate" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Button fx:id="tariffChangeButton" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="150.0" text="tariffChangeButton" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffAdder" layoutX="410.0" layoutY="170.0" prefHeight="500.0" prefWidth="600.0" visible="false">
+         <children>
+            <TextField fx:id="newTariffName" layoutX="40.0" layoutY="50.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="addTariff" layoutX="245.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Add" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="newTariffPrice" layoutX="165.0" layoutY="200.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's price">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="newTariffInternet" layoutX="320.0" layoutY="50.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's internet GBs">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="newTariffCalls" layoutX="320.0" layoutY="110.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's call minutes">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="newTariffDuration" layoutX="40.0" layoutY="110.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's duration">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffDeleteAnchor" layoutX="565.0" layoutY="160.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="tariffDeleteName" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="deleteTariffBut" layoutX="170.0" layoutY="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="delete" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffChangeAnchor" layoutX="565.0" layoutY="160.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <Button fx:id="changeTariffName" layoutX="130.0" layoutY="60.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Change name" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="changeTariffPrice" layoutX="130.0" layoutY="120.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Change Price" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="changeTariffInternetVol" layoutX="130.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Internet vol." textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="changeTariffDuration" layoutX="130.0" layoutY="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Duration" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="changeTariffCalls" layoutX="130.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Call mins" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffChangeNameAnchor" layoutX="565.0" layoutY="160.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="tariffChangeNameId" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's id">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="changeTariffNameButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="change" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="tariffNewName" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's new name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffChangePriceAnchor" layoutX="565.0" layoutY="160.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="tariffChangePriceName" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="changeTariffPriceButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="change" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="tariffNewPrice" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's new price">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffChangeInternetAnchor" layoutX="565.0" layoutY="160.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="tariffChangeInternetName" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="changeTariffInternetButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="change" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="tariffNewInternet" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's new internet">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffChangeDurationAnchor" layoutX="565.0" layoutY="160.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="tariffChangeDurationName" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="changeTariffDurationButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="change" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="tariffNewDuration" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's new duration">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tariffChangeCallAnchor" layoutX="565.0" layoutY="160.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <children>
+            <TextField fx:id="tariffChangeCallName" layoutX="90.0" layoutY="120.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="changeTariffCallButton" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="change" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="tariffNewCall" layoutX="90.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter tariff's new call mins">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="clientRegister" layoutX="480.0" layoutY="150.0" prefHeight="400.0" prefWidth="500.0" visible="false">
+         <children>
+            <TextField fx:id="newClientLog" layoutX="20.0" layoutY="90.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter client's login">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="newClientPass" layoutX="20.0" layoutY="150.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter client's password">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <PasswordField fx:id="newClientPass2" layoutX="260.0" layoutY="150.0" prefHeight="40.0" prefWidth="220.0" promptText="Confirm password">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Button fx:id="addButton" layoutX="210.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF #00BFFF#00BFFF;" text="Add" textFill="#000000b2">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="newClientName" layoutX="260.0" layoutY="90.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter client's name">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="newClientNumber" layoutX="140.0" layoutY="210.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter client's number">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="vacTable" layoutX="10.0" layoutY="150.0" prefHeight="400.0" prefWidth="550.0" visible="false">
+         <columns>
+            <TableColumn fx:id="tableVacId" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="tableWorkerName" prefWidth="100.0" text="Worker's name" />
+            <TableColumn fx:id="tableWorkerLname" prefWidth="100.0" text="Worker's Lname" />
+            <TableColumn fx:id="tableBeginDate" prefWidth="100.0" text="Beginning date" />
+            <TableColumn fx:id="tableEndDate" prefWidth="100.0" text="Ending date" />
+            <TableColumn fx:id="tableStatus" prefWidth="100.0" text="Status" />
+         </columns>
+      </TableView>
+      <TableView fx:id="complainTable" layoutX="590.0" layoutY="150.0" prefHeight="400.0" prefWidth="400.0" visible="false">
+         <columns>
+            <TableColumn fx:id="tableComplainName" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="tableComplainComplain" prefWidth="150.0" text="Complain" />
+            <TableColumn fx:id="tableComplainReason" prefWidth="150.0" text="Reason" />
+         </columns>
+      </TableView>
+      <ChoiceBox fx:id="idBox" layoutX="260.0" layoutY="600.0" prefWidth="150.0" visible="false" />
+      <TextField fx:id="idField" layoutX="100.0" layoutY="600.0" promptText="Enter ID" visible="false" />
+   </children>
+</AnchorPane>
